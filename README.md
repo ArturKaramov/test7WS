@@ -1,5 +1,2 @@
-My alternative for CRA<br>
-Uses NodeJS verion 20.11.0<br><br>
-Edit `index.html` before development starts<br>
-Edit `robots.txt` if necessary
-# test7WS
+# Тестовое задание
+PS Протокол бекэнда на http, а gh-pages поддерживает только https, но тем не менее:  (Ссылка на gh-pages)[https://arturkaramov.github.io/test7WS/]
