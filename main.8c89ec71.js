@@ -31194,12 +31194,12 @@ function calculateLength(arr, newRow) {
     }
     else {
         let res = 1;
-        const queue = newRow ? [...arr, null] : [...arr];
-        while (queue.length > 1) {
-            const parent = queue.shift();
+        const stack = newRow ? [...arr, null] : [...arr];
+        while (stack.length > 1) {
+            const parent = stack.shift();
             res += 1;
             if (parent && parent.child.length) {
-                queue.unshift(...parent.child);
+                stack.unshift(...parent.child);
             }
         }
         return res;
@@ -37595,4 +37595,4 @@ root.render((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_app_provider
 
 /******/ })()
 ;
-//# sourceMappingURL=main.e9e6b1d6.js.map
+//# sourceMappingURL=main.8c89ec71.js.map
