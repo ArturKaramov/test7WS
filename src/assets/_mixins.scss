@@ -1,12 +1,12 @@
 @import './variables';
 
 @mixin buttonParent($number) {
-	&::after {
-		content: '';
-		height: calc(52px + 60px * ($number - 1));
-		width: 1px;
-		background-color: $color-min-grey;
-		position: absolute;
-		bottom: calc(-52px + (4px + (-60px * ($number - 1))));
-	}
+  &::after {
+    content: '';
+    height: calc(52px + 60px * ($number - 1));
+    width: 1px;
+    background-color: $color-min-grey;
+    position: absolute;
+    bottom: calc(-52px + (4px + (-60px * ($number - 1))));
+  }
 }

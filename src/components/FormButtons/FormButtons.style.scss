@@ -2,90 +2,90 @@
 @import '../../assets/mixins';
 
 .buttons {
-	width: 29px;
-	height: 28px;
-	margin-left: 12px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	position: relative;
+  width: 29px;
+  height: 28px;
+  margin-left: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 
-	&:hover {
-		width: 55px;
-		gap: 2px;
-		background-color: $color-dark-grey;
-		border-radius: 6px;
+  &:hover {
+    width: 55px;
+    gap: 2px;
+    background-color: $color-dark-grey;
+    border-radius: 6px;
 
-		> .buttons__button_delete {
-			display: flex;
-		}
-	}
+    > .buttons__button_delete {
+      display: flex;
+    }
+  }
 
-	&__button {
-		width: 24px;
-		height: 24px;
-		padding: 0;
-		margin: 0;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-color: transparent;
-		border: none;
-		position: relative;
+  &__button {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    position: relative;
 
-		&_delete {
-			display: none;
-		}
-	}
-	&__withParent {
-		&::before {
-			content: '';
-			height: 1px;
-			width: 12px;
-			background-color: $color-min-grey;
-			position: absolute;
-			left: -8px;
-		}
-	}
+    &_delete {
+      display: none;
+    }
+  }
+  &__withParent {
+    &::before {
+      content: '';
+      height: 1px;
+      width: 12px;
+      background-color: $color-min-grey;
+      position: absolute;
+      left: -8px;
+    }
+  }
 
-	&__withChild-1 {
-		@include buttonParent(1);
-	}
+  &__withChild-1 {
+    @include buttonParent(1);
+  }
 
-	&__withChild-2 {
-		@include buttonParent(2);
-	}
+  &__withChild-2 {
+    @include buttonParent(2);
+  }
 
-	&__withChild-3 {
-		@include buttonParent(3);
-	}
+  &__withChild-3 {
+    @include buttonParent(3);
+  }
 
-	&__withChild-4 {
-		@include buttonParent(4);
-	}
+  &__withChild-4 {
+    @include buttonParent(4);
+  }
 
-	&__withChild-5 {
-		@include buttonParent(5);
-	}
+  &__withChild-5 {
+    @include buttonParent(5);
+  }
 
-	&__withChild-6 {
-		@include buttonParent(6);
-	}
+  &__withChild-6 {
+    @include buttonParent(6);
+  }
 
-	&__withChild-7 {
-		@include buttonParent(7);
-	}
+  &__withChild-7 {
+    @include buttonParent(7);
+  }
 
-	&__withChild-8 {
-		@include buttonParent(8);
-	}
+  &__withChild-8 {
+    @include buttonParent(8);
+  }
 
-	&__withChild-9 {
-		@include buttonParent(9);
-	}
+  &__withChild-9 {
+    @include buttonParent(9);
+  }
 
-	&__withChild-10 {
-		@include buttonParent(10);
-	}
+  &__withChild-10 {
+    @include buttonParent(10);
+  }
 }

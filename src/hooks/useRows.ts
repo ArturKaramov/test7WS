@@ -5,16 +5,16 @@ import { rowService } from 'src/services/row.service'
 import { IRow } from 'src/types/rows'
 
 export function useRows() {
-	const { data } = useQuery({
-		queryKey: ['rows'],
-		queryFn: () => rowService.getTreeRows()
-	})
+  const { data } = useQuery({
+    queryKey: ['rows'],
+    queryFn: () => rowService.getTreeRows()
+  })
 
-	const [rows, setRows] = useState<Array<IRow> | undefined>(data)
+  const [rows, setRows] = useState<Array<IRow> | undefined>(data)
 
-	useEffect(() => {
-		setRows(data)
-	}, [data])
+  useEffect(() => {
+    setRows(data)
+  }, [data])
 
-	return { rows, setRows }
+  return { rows, setRows }
 }
