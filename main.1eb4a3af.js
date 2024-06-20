@@ -53,7 +53,7 @@ body > #root .flex {
 }
 body > #root .flex .main {
   width: 100%;
-}`, "",{"version":3,"sources":["webpack://./src/app/App.style.scss","webpack://./src/assets/_variables.scss"],"names":[],"mappings":"AAIA;EACC,SAAA;EACA,aAAA;EACA,iBAAA;EACA,YAAA;EACA,wCCDa;EDEb,eAAA;EACA,iBAAA;EACA,gBAAA;EACA,kBAAA;EACA,iCAAA;EACA,yBAAA;AADD;AAGC;EACC,WAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,eAAA;EACA,cAAA;AADF;AAGE;EACC,WAAA;EACA,aAAA;EACA,mBAAA;AADH;AAGG;EACC,WAAA;AADJ","sourcesContent":["@import '../assets/reset.css';\n@import '../assets/fonts.scss';\n@import '../assets/_variables.scss';\n\nbody {\n\tmargin: 0;\n\theight: 100vh;\n\tmax-width: 1920px;\n\twidth: 100vw;\n\tfont-family: $font-roboto;\n\tfont-size: 14px;\n\tline-height: 16px;\n\tfont-weight: 400;\n\tfont-style: normal;\n\tbackground-color: rgb(32, 33, 36);\n\tcolor: rgb(255, 255, 255);\n\n\t> #root {\n\t\twidth: 100%;\n\t\tdisplay: flex;\n\t\talign-items: center;\n\t\tjustify-content: center;\n\t\theight: inherit;\n\t\twidth: inherit;\n\n\t\t.flex {\n\t\t\twidth: 100%;\n\t\t\tdisplay: flex;\n\t\t\tflex-direction: row;\n\n\t\t\t.main {\n\t\t\t\twidth: 100%;\n\t\t\t}\n\t\t}\n\t}\n}\n","$color-dark-background: rgb(32, 33, 36);\n$color-grey-background: rgb(39, 39, 42);\n$color-white: rgb(255, 255, 255);\n\n$color-min-grey: rgb(198, 198, 198);\n$color-light-grey: rgb(161, 161, 170);\n$color-grey: rgb(113, 113, 122);\n$color-dark-grey: rgb(65, 65, 68);\n$font-roboto: 'Roboto', Arial, sans-serif;\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/app/App.style.scss","webpack://./src/assets/_variables.scss"],"names":[],"mappings":"AAIA;EACE,SAAA;EACA,aAAA;EACA,iBAAA;EACA,YAAA;EACA,wCCDY;EDEZ,eAAA;EACA,iBAAA;EACA,gBAAA;EACA,kBAAA;EACA,iCAAA;EACA,yBAAA;AADF;AAGE;EACE,WAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,eAAA;EACA,cAAA;AADJ;AAGI;EACE,WAAA;EACA,aAAA;EACA,mBAAA;AADN;AAGM;EACE,WAAA;AADR","sourcesContent":["@import '../assets/reset.css';\n@import '../assets/fonts.scss';\n@import '../assets/_variables.scss';\n\nbody {\n  margin: 0;\n  height: 100vh;\n  max-width: 1920px;\n  width: 100vw;\n  font-family: $font-roboto;\n  font-size: 14px;\n  line-height: 16px;\n  font-weight: 400;\n  font-style: normal;\n  background-color: rgb(32, 33, 36);\n  color: rgb(255, 255, 255);\n\n  > #root {\n    width: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    height: inherit;\n    width: inherit;\n\n    .flex {\n      width: 100%;\n      display: flex;\n      flex-direction: row;\n\n      .main {\n        width: 100%;\n      }\n    }\n  }\n}\n","$color-dark-background: rgb(32, 33, 36);\n$color-grey-background: rgb(39, 39, 42);\n$color-white: rgb(255, 255, 255);\n\n$color-min-grey: rgb(198, 198, 198);\n$color-light-grey: rgb(161, 161, 170);\n$color-grey: rgb(113, 113, 122);\n$color-dark-grey: rgb(65, 65, 68);\n$font-roboto: 'Roboto', Arial, sans-serif;\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -105,7 +105,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.addForm {
 }
 .addForm__submit {
   display: none;
-}`, "",{"version":3,"sources":["webpack://./src/components/AddRowItem/AddRowItem.style.scss","webpack://./src/assets/_variables.scss"],"names":[],"mappings":"AAEA;EACC,YAAA;EACA,eAAA;EACA,aAAA;EACA,mBAAA;EACA,gEAAA;EACA,qCAAA;AADD;AAGC;EACC,cAAA;EACA,kBAAA;EACA,YAAA;EACA,6BAAA;EAEA,yBCVW;EDWX,aAAA;EACA,iCAAA;EACA,kBAAA;AAFF;AAIE;EACC,yBChBU;EDiBV,aAAA;EACA,iCAAA;EACA,kBAAA;AAFH;AAMC;EACC,aAAA;AAJF","sourcesContent":["@import '../../assets/variables';\n\n.addForm {\n\theight: 60px;\n\tpadding: 12px 0;\n\tdisplay: grid;\n\talign-items: center;\n\tgrid-template-columns: 110px minmax(200px, 1fr) repeat(4, 200px);\n\tborder-top: 1px solid $color-dark-grey;\n\n\t&__input {\n\t\tmargin: 0 12px;\n\t\tpadding-left: 10px;\n\t\theight: 100%;\n\t\tbackground-color: transparent;\n\n\t\tcolor: $color-grey;\n\t\toutline: none;\n\t\tborder: 1px solid $color-dark-grey;\n\t\tborder-radius: 6px;\n\n\t\t&:focus {\n\t\t\tcolor: $color-grey;\n\t\t\toutline: none;\n\t\t\tborder: 1px solid $color-dark-grey;\n\t\t\tborder-radius: 6px;\n\t\t}\n\t}\n\n\t&__submit {\n\t\tdisplay: none;\n\t}\n}\n","$color-dark-background: rgb(32, 33, 36);\n$color-grey-background: rgb(39, 39, 42);\n$color-white: rgb(255, 255, 255);\n\n$color-min-grey: rgb(198, 198, 198);\n$color-light-grey: rgb(161, 161, 170);\n$color-grey: rgb(113, 113, 122);\n$color-dark-grey: rgb(65, 65, 68);\n$font-roboto: 'Roboto', Arial, sans-serif;\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/AddRowItem/AddRowItem.style.scss","webpack://./src/assets/_variables.scss"],"names":[],"mappings":"AAEA;EACE,YAAA;EACA,eAAA;EACA,aAAA;EACA,mBAAA;EACA,gEAAA;EACA,qCAAA;AADF;AAGE;EACE,cAAA;EACA,kBAAA;EACA,YAAA;EACA,6BAAA;EAEA,yBCVS;EDWT,aAAA;EACA,iCAAA;EACA,kBAAA;AAFJ;AAII;EACE,yBChBO;EDiBP,aAAA;EACA,iCAAA;EACA,kBAAA;AAFN;AAME;EACE,aAAA;AAJJ","sourcesContent":["@import '../../assets/variables';\n\n.addForm {\n  height: 60px;\n  padding: 12px 0;\n  display: grid;\n  align-items: center;\n  grid-template-columns: 110px minmax(200px, 1fr) repeat(4, 200px);\n  border-top: 1px solid $color-dark-grey;\n\n  &__input {\n    margin: 0 12px;\n    padding-left: 10px;\n    height: 100%;\n    background-color: transparent;\n\n    color: $color-grey;\n    outline: none;\n    border: 1px solid $color-dark-grey;\n    border-radius: 6px;\n\n    &:focus {\n      color: $color-grey;\n      outline: none;\n      border: 1px solid $color-dark-grey;\n      border-radius: 6px;\n    }\n  }\n\n  &__submit {\n    display: none;\n  }\n}\n","$color-dark-background: rgb(32, 33, 36);\n$color-grey-background: rgb(39, 39, 42);\n$color-white: rgb(255, 255, 255);\n\n$color-min-grey: rgb(198, 198, 198);\n$color-light-grey: rgb(161, 161, 170);\n$color-grey: rgb(113, 113, 122);\n$color-dark-grey: rgb(65, 65, 68);\n$font-roboto: 'Roboto', Arial, sans-serif;\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -157,7 +157,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.build {
 }
 .build__list {
   margin-left: 9px;
-}`, "",{"version":3,"sources":["webpack://./src/components/BuildWork/BuildWork.style.scss"],"names":[],"mappings":"AACA;EACC,WAAA;EACA,gBAAA;EACA,iBAAA;AAAD;AACC;EACC,wCAAA;AACF;AACC;EACC,qBAAA;EACA,eAAA;EACA,iBAAA;EACA,oCAAA;EACA,uCAAA;AACF;AACC;EACC,aAAA;EACA,gEAAA;EACA,kBAAA;EACA,eAAA;AACF;AAEC;EACC,eAAA;AAAF;AAGC;EACC,gBAAA;AADF","sourcesContent":["@import '../../assets/variables';\n.build {\n\twidth: 100%;\n\tmargin-top: 43px;\n\tmax-width: calc(1920px - 234px);\n\t&__tabs {\n\t\tborder-bottom: 1px solid $color-dark-grey;\n\t}\n\t&__title {\n\t\tdisplay: inline-block;\n\t\tfont-size: 18px;\n\t\tline-height: 21px;\n\t\tpadding: 11.5px 15.5px 11.5px 14.5px;\n\t\tborder-right: 1px solid $color-dark-grey;\n\t}\n\t&__names {\n\t\tdisplay: grid;\n\t\tgrid-template-columns: 110px minmax(200px, 1fr) repeat(4, 200px);\n\t\tmargin-left: 9.5px;\n\t\tpadding: 12px 0;\n\t}\n\n\t&__name {\n\t\tpadding: 0 12px;\n\t}\n\n\t&__list {\n\t\tmargin-left: 9px;\n\t}\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/BuildWork/BuildWork.style.scss"],"names":[],"mappings":"AACA;EACE,WAAA;EACA,gBAAA;EACA,iBAAA;AAAF;AACE;EACE,wCAAA;AACJ;AACE;EACE,qBAAA;EACA,eAAA;EACA,iBAAA;EACA,oCAAA;EACA,uCAAA;AACJ;AACE;EACE,aAAA;EACA,gEAAA;EACA,kBAAA;EACA,eAAA;AACJ;AAEE;EACE,eAAA;AAAJ;AAGE;EACE,gBAAA;AADJ","sourcesContent":["@import '../../assets/variables';\n.build {\n  width: 100%;\n  margin-top: 43px;\n  max-width: calc(1920px - 234px);\n  &__tabs {\n    border-bottom: 1px solid $color-dark-grey;\n  }\n  &__title {\n    display: inline-block;\n    font-size: 18px;\n    line-height: 21px;\n    padding: 11.5px 15.5px 11.5px 14.5px;\n    border-right: 1px solid $color-dark-grey;\n  }\n  &__names {\n    display: grid;\n    grid-template-columns: 110px minmax(200px, 1fr) repeat(4, 200px);\n    margin-left: 9.5px;\n    padding: 12px 0;\n  }\n\n  &__name {\n    padding: 0 12px;\n  }\n\n  &__list {\n    margin-left: 9px;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -304,7 +304,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.buttons {
   background-color: rgb(198, 198, 198);
   position: absolute;
   bottom: -588px;
-}`, "",{"version":3,"sources":["webpack://./src/components/FormButtons/FormButtons.style.scss","webpack://./src/assets/_variables.scss","webpack://./src/assets/_mixins.scss"],"names":[],"mappings":"AAGA;EACC,WAAA;EACA,YAAA;EACA,iBAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,uBAAA;EACA,kBAAA;AAFD;AAIC;EACC,WAAA;EACA,QAAA;EACA,iCCTgB;EDUhB,kBAAA;AAFF;AAIE;EACC,aAAA;AAFH;AAMC;EACC,WAAA;EACA,YAAA;EACA,UAAA;EACA,SAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,6BAAA;EACA,YAAA;EACA,kBAAA;AAJF;AAME;EACC,aAAA;AAJH;AAQE;EACC,WAAA;EACA,WAAA;EACA,WAAA;EACA,oCCzCc;ED0Cd,kBAAA;EACA,UAAA;AANH;AEtCC;EACC,WAAA;EACA,YAAA;EACA,UAAA;EACA,oCDHe;ECIf,kBAAA;EACA,aAAA;AFwCF;AE9CC;EACC,WAAA;EACA,aAAA;EACA,UAAA;EACA,oCDHe;ECIf,kBAAA;EACA,cAAA;AFgDF;AEtDC;EACC,WAAA;EACA,aAAA;EACA,UAAA;EACA,oCDHe;ECIf,kBAAA;EACA,cAAA;AFwDF;AE9DC;EACC,WAAA;EACA,aAAA;EACA,UAAA;EACA,oCDHe;ECIf,kBAAA;EACA,cAAA;AFgEF;AEtEC;EACC,WAAA;EACA,aAAA;EACA,UAAA;EACA,oCDHe;ECIf,kBAAA;EACA,cAAA;AFwEF;AE9EC;EACC,WAAA;EACA,aAAA;EACA,UAAA;EACA,oCDHe;ECIf,kBAAA;EACA,cAAA;AFgFF;AEtFC;EACC,WAAA;EACA,aAAA;EACA,UAAA;EACA,oCDHe;ECIf,kBAAA;EACA,cAAA;AFwFF;AE9FC;EACC,WAAA;EACA,aAAA;EACA,UAAA;EACA,oCDHe;ECIf,kBAAA;EACA,cAAA;AFgGF;AEtGC;EACC,WAAA;EACA,aAAA;EACA,UAAA;EACA,oCDHe;ECIf,kBAAA;EACA,cAAA;AFwGF;AE9GC;EACC,WAAA;EACA,aAAA;EACA,UAAA;EACA,oCDHe;ECIf,kBAAA;EACA,cAAA;AFgHF","sourcesContent":["@import '../../assets/variables';\n@import '../../assets/mixins';\n\n.buttons {\n\twidth: 29px;\n\theight: 28px;\n\tmargin-left: 12px;\n\tdisplay: flex;\n\tflex-direction: row;\n\talign-items: center;\n\tjustify-content: center;\n\tposition: relative;\n\n\t&:hover {\n\t\twidth: 55px;\n\t\tgap: 2px;\n\t\tbackground-color: $color-dark-grey;\n\t\tborder-radius: 6px;\n\n\t\t> .buttons__button_delete {\n\t\t\tdisplay: flex;\n\t\t}\n\t}\n\n\t&__button {\n\t\twidth: 24px;\n\t\theight: 24px;\n\t\tpadding: 0;\n\t\tmargin: 0;\n\t\tdisplay: flex;\n\t\tjustify-content: center;\n\t\talign-items: center;\n\t\tbackground-color: transparent;\n\t\tborder: none;\n\t\tposition: relative;\n\n\t\t&_delete {\n\t\t\tdisplay: none;\n\t\t}\n\t}\n\t&__withParent {\n\t\t&::before {\n\t\t\tcontent: '';\n\t\t\theight: 1px;\n\t\t\twidth: 12px;\n\t\t\tbackground-color: $color-min-grey;\n\t\t\tposition: absolute;\n\t\t\tleft: -8px;\n\t\t}\n\t}\n\n\t&__withChild-1 {\n\t\t@include buttonParent(1);\n\t}\n\n\t&__withChild-2 {\n\t\t@include buttonParent(2);\n\t}\n\n\t&__withChild-3 {\n\t\t@include buttonParent(3);\n\t}\n\n\t&__withChild-4 {\n\t\t@include buttonParent(4);\n\t}\n\n\t&__withChild-5 {\n\t\t@include buttonParent(5);\n\t}\n\n\t&__withChild-6 {\n\t\t@include buttonParent(6);\n\t}\n\n\t&__withChild-7 {\n\t\t@include buttonParent(7);\n\t}\n\n\t&__withChild-8 {\n\t\t@include buttonParent(8);\n\t}\n\n\t&__withChild-9 {\n\t\t@include buttonParent(9);\n\t}\n\n\t&__withChild-10 {\n\t\t@include buttonParent(10);\n\t}\n}\n","$color-dark-background: rgb(32, 33, 36);\n$color-grey-background: rgb(39, 39, 42);\n$color-white: rgb(255, 255, 255);\n\n$color-min-grey: rgb(198, 198, 198);\n$color-light-grey: rgb(161, 161, 170);\n$color-grey: rgb(113, 113, 122);\n$color-dark-grey: rgb(65, 65, 68);\n$font-roboto: 'Roboto', Arial, sans-serif;\n","@import './variables';\n\n@mixin buttonParent($number) {\n\t&::after {\n\t\tcontent: '';\n\t\theight: calc(52px + 60px * ($number - 1));\n\t\twidth: 1px;\n\t\tbackground-color: $color-min-grey;\n\t\tposition: absolute;\n\t\tbottom: calc(-52px + (4px + (-60px * ($number - 1))));\n\t}\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/FormButtons/FormButtons.style.scss","webpack://./src/assets/_variables.scss","webpack://./src/assets/_mixins.scss"],"names":[],"mappings":"AAGA;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,uBAAA;EACA,kBAAA;AAFF;AAIE;EACE,WAAA;EACA,QAAA;EACA,iCCTc;EDUd,kBAAA;AAFJ;AAII;EACE,aAAA;AAFN;AAME;EACE,WAAA;EACA,YAAA;EACA,UAAA;EACA,SAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,6BAAA;EACA,YAAA;EACA,kBAAA;AAJJ;AAMI;EACE,aAAA;AAJN;AAQI;EACE,WAAA;EACA,WAAA;EACA,WAAA;EACA,oCCzCW;ED0CX,kBAAA;EACA,UAAA;AANN;AEtCE;EACE,WAAA;EACA,YAAA;EACA,UAAA;EACA,oCDHa;ECIb,kBAAA;EACA,aAAA;AFwCJ;AE9CE;EACE,WAAA;EACA,aAAA;EACA,UAAA;EACA,oCDHa;ECIb,kBAAA;EACA,cAAA;AFgDJ;AEtDE;EACE,WAAA;EACA,aAAA;EACA,UAAA;EACA,oCDHa;ECIb,kBAAA;EACA,cAAA;AFwDJ;AE9DE;EACE,WAAA;EACA,aAAA;EACA,UAAA;EACA,oCDHa;ECIb,kBAAA;EACA,cAAA;AFgEJ;AEtEE;EACE,WAAA;EACA,aAAA;EACA,UAAA;EACA,oCDHa;ECIb,kBAAA;EACA,cAAA;AFwEJ;AE9EE;EACE,WAAA;EACA,aAAA;EACA,UAAA;EACA,oCDHa;ECIb,kBAAA;EACA,cAAA;AFgFJ;AEtFE;EACE,WAAA;EACA,aAAA;EACA,UAAA;EACA,oCDHa;ECIb,kBAAA;EACA,cAAA;AFwFJ;AE9FE;EACE,WAAA;EACA,aAAA;EACA,UAAA;EACA,oCDHa;ECIb,kBAAA;EACA,cAAA;AFgGJ;AEtGE;EACE,WAAA;EACA,aAAA;EACA,UAAA;EACA,oCDHa;ECIb,kBAAA;EACA,cAAA;AFwGJ;AE9GE;EACE,WAAA;EACA,aAAA;EACA,UAAA;EACA,oCDHa;ECIb,kBAAA;EACA,cAAA;AFgHJ","sourcesContent":["@import '../../assets/variables';\n@import '../../assets/mixins';\n\n.buttons {\n  width: 29px;\n  height: 28px;\n  margin-left: 12px;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n  position: relative;\n\n  &:hover {\n    width: 55px;\n    gap: 2px;\n    background-color: $color-dark-grey;\n    border-radius: 6px;\n\n    > .buttons__button_delete {\n      display: flex;\n    }\n  }\n\n  &__button {\n    width: 24px;\n    height: 24px;\n    padding: 0;\n    margin: 0;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-color: transparent;\n    border: none;\n    position: relative;\n\n    &_delete {\n      display: none;\n    }\n  }\n  &__withParent {\n    &::before {\n      content: '';\n      height: 1px;\n      width: 12px;\n      background-color: $color-min-grey;\n      position: absolute;\n      left: -8px;\n    }\n  }\n\n  &__withChild-1 {\n    @include buttonParent(1);\n  }\n\n  &__withChild-2 {\n    @include buttonParent(2);\n  }\n\n  &__withChild-3 {\n    @include buttonParent(3);\n  }\n\n  &__withChild-4 {\n    @include buttonParent(4);\n  }\n\n  &__withChild-5 {\n    @include buttonParent(5);\n  }\n\n  &__withChild-6 {\n    @include buttonParent(6);\n  }\n\n  &__withChild-7 {\n    @include buttonParent(7);\n  }\n\n  &__withChild-8 {\n    @include buttonParent(8);\n  }\n\n  &__withChild-9 {\n    @include buttonParent(9);\n  }\n\n  &__withChild-10 {\n    @include buttonParent(10);\n  }\n}\n","$color-dark-background: rgb(32, 33, 36);\n$color-grey-background: rgb(39, 39, 42);\n$color-white: rgb(255, 255, 255);\n\n$color-min-grey: rgb(198, 198, 198);\n$color-light-grey: rgb(161, 161, 170);\n$color-grey: rgb(113, 113, 122);\n$color-dark-grey: rgb(65, 65, 68);\n$font-roboto: 'Roboto', Arial, sans-serif;\n","@import './variables';\n\n@mixin buttonParent($number) {\n  &::after {\n    content: '';\n    height: calc(52px + 60px * ($number - 1));\n    width: 1px;\n    background-color: $color-min-grey;\n    position: absolute;\n    bottom: calc(-52px + (4px + (-60px * ($number - 1))));\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -354,7 +354,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.form {
 }
 .form__submit {
   display: none;
-}`, "",{"version":3,"sources":["webpack://./src/components/FormItem/FormItem.style.scss","webpack://./src/assets/_variables.scss"],"names":[],"mappings":"AAEA;EACC,YAAA;EACA,eAAA;EACA,aAAA;EACA,mBAAA;EACA,gEAAA;EACA,qCAAA;AADD;AAGC;EACC,YAAA;EACA,cAAA;EACA,6BAAA;EACA,YAAA;EACA,yBCbY;ADYd;AAGE;EACC,kBAAA;EACA,yBCbU;EDcV,aAAA;EACA,iCAAA;EACA,kBAAA;AADH;AAKC;EACC,aAAA;AAHF","sourcesContent":["@import '../../assets/variables';\n\n.form {\n\theight: 60px;\n\tpadding: 12px 0;\n\tdisplay: grid;\n\talign-items: center;\n\tgrid-template-columns: 110px minmax(200px, 1fr) repeat(4, 200px);\n\tborder-top: 1px solid $color-dark-grey;\n\n\t&__input {\n\t\theight: 100%;\n\t\tmargin: 0 12px;\n\t\tbackground-color: transparent;\n\t\tborder: none;\n\t\tcolor: $color-white;\n\n\t\t&:focus {\n\t\t\tpadding-left: 10px;\n\t\t\tcolor: $color-grey;\n\t\t\toutline: none;\n\t\t\tborder: 1px solid $color-dark-grey;\n\t\t\tborder-radius: 6px;\n\t\t}\n\t}\n\n\t&__submit {\n\t\tdisplay: none;\n\t}\n}\n","$color-dark-background: rgb(32, 33, 36);\n$color-grey-background: rgb(39, 39, 42);\n$color-white: rgb(255, 255, 255);\n\n$color-min-grey: rgb(198, 198, 198);\n$color-light-grey: rgb(161, 161, 170);\n$color-grey: rgb(113, 113, 122);\n$color-dark-grey: rgb(65, 65, 68);\n$font-roboto: 'Roboto', Arial, sans-serif;\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/FormItem/FormItem.style.scss","webpack://./src/assets/_variables.scss"],"names":[],"mappings":"AAEA;EACE,YAAA;EACA,eAAA;EACA,aAAA;EACA,mBAAA;EACA,gEAAA;EACA,qCAAA;AADF;AAGE;EACE,YAAA;EACA,cAAA;EACA,6BAAA;EACA,YAAA;EACA,yBCbU;ADYd;AAGI;EACE,kBAAA;EACA,yBCbO;EDcP,aAAA;EACA,iCAAA;EACA,kBAAA;AADN;AAKE;EACE,aAAA;AAHJ","sourcesContent":["@import '../../assets/variables';\n\n.form {\n  height: 60px;\n  padding: 12px 0;\n  display: grid;\n  align-items: center;\n  grid-template-columns: 110px minmax(200px, 1fr) repeat(4, 200px);\n  border-top: 1px solid $color-dark-grey;\n\n  &__input {\n    height: 100%;\n    margin: 0 12px;\n    background-color: transparent;\n    border: none;\n    color: $color-white;\n\n    &:focus {\n      padding-left: 10px;\n      color: $color-grey;\n      outline: none;\n      border: 1px solid $color-dark-grey;\n      border-radius: 6px;\n    }\n  }\n\n  &__submit {\n    display: none;\n  }\n}\n","$color-dark-background: rgb(32, 33, 36);\n$color-grey-background: rgb(39, 39, 42);\n$color-white: rgb(255, 255, 255);\n\n$color-min-grey: rgb(198, 198, 198);\n$color-light-grey: rgb(161, 161, 170);\n$color-grey: rgb(113, 113, 122);\n$color-dark-grey: rgb(65, 65, 68);\n$font-roboto: 'Roboto', Arial, sans-serif;\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -416,7 +416,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.header {
   padding: 13px 4px 12px 3px;
   border-bottom: 2px solid rgb(255, 255, 255);
   color: rgb(255, 255, 255);
-}`, "",{"version":3,"sources":["webpack://./src/components/Header/Header.style.scss","webpack://./src/assets/_variables.scss"],"names":[],"mappings":"AACA;EACC,WAAA;EACA,iBAAA;EACA,YAAA;EACA,eAAA;EACA,iCCLuB;EDMvB,MAAA;EACA,OAAA;EACA,iCAAA;AAAD;AAEC;EACC,YAAA;AAAF;AAEC;EACC,YAAA;EACA,aAAA;EACA,mBAAA;EACA,kBAAA;EACA,SAAA;EACA,yBCfiB;ADenB;AAEC;EACC,aAAA;EACA,mBAAA;EACA,SAAA;AAAF;AAGC;EACC,YAAA;EACA,aAAA;EACA,mBAAA;EACA,SAAA;AADF;AAGE;EACC,0BAAA;EACA,2CAAA;EACA,yBCnCW;ADkCd","sourcesContent":["@import '../../assets/variables';\n.header {\n\twidth: 100%;\n\tmax-width: 1920px;\n\theight: 43px;\n\tposition: fixed;\n\tbackground-color: $color-grey-background;\n\ttop: 0;\n\tleft: 0;\n\tborder: 1px solid rgb(65, 65, 68);\n\n\t&__nav {\n\t\theight: 100%;\n\t}\n\t&__list {\n\t\theight: 100%;\n\t\tdisplay: flex;\n\t\talign-items: center;\n\t\tpadding-left: 20px;\n\t\tgap: 28px;\n\t\tcolor: $color-light-grey;\n\t}\n\t&__icons {\n\t\tdisplay: flex;\n\t\talign-items: center;\n\t\tgap: 20px;\n\t}\n\n\t&__sections {\n\t\theight: 100%;\n\t\tdisplay: flex;\n\t\talign-items: center;\n\t\tgap: 24px;\n\n\t\t&_active {\n\t\t\tpadding: 13px 4px 12px 3px;\n\t\t\tborder-bottom: 2px solid $color-white;\n\t\t\tcolor: $color-white;\n\t\t}\n\t}\n}\n","$color-dark-background: rgb(32, 33, 36);\n$color-grey-background: rgb(39, 39, 42);\n$color-white: rgb(255, 255, 255);\n\n$color-min-grey: rgb(198, 198, 198);\n$color-light-grey: rgb(161, 161, 170);\n$color-grey: rgb(113, 113, 122);\n$color-dark-grey: rgb(65, 65, 68);\n$font-roboto: 'Roboto', Arial, sans-serif;\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/Header/Header.style.scss","webpack://./src/assets/_variables.scss"],"names":[],"mappings":"AACA;EACE,WAAA;EACA,iBAAA;EACA,YAAA;EACA,eAAA;EACA,iCCLsB;EDMtB,MAAA;EACA,OAAA;EACA,iCAAA;AAAF;AAEE;EACE,YAAA;AAAJ;AAEE;EACE,YAAA;EACA,aAAA;EACA,mBAAA;EACA,kBAAA;EACA,SAAA;EACA,yBCfe;ADenB;AAEE;EACE,aAAA;EACA,mBAAA;EACA,SAAA;AAAJ;AAGE;EACE,YAAA;EACA,aAAA;EACA,mBAAA;EACA,SAAA;AADJ;AAGI;EACE,0BAAA;EACA,2CAAA;EACA,yBCnCQ;ADkCd","sourcesContent":["@import '../../assets/variables';\n.header {\n  width: 100%;\n  max-width: 1920px;\n  height: 43px;\n  position: fixed;\n  background-color: $color-grey-background;\n  top: 0;\n  left: 0;\n  border: 1px solid rgb(65, 65, 68);\n\n  &__nav {\n    height: 100%;\n  }\n  &__list {\n    height: 100%;\n    display: flex;\n    align-items: center;\n    padding-left: 20px;\n    gap: 28px;\n    color: $color-light-grey;\n  }\n  &__icons {\n    display: flex;\n    align-items: center;\n    gap: 20px;\n  }\n\n  &__sections {\n    height: 100%;\n    display: flex;\n    align-items: center;\n    gap: 24px;\n\n    &_active {\n      padding: 13px 4px 12px 3px;\n      border-bottom: 2px solid $color-white;\n      color: $color-white;\n    }\n  }\n}\n","$color-dark-background: rgb(32, 33, 36);\n$color-grey-background: rgb(39, 39, 42);\n$color-white: rgb(255, 255, 255);\n\n$color-min-grey: rgb(198, 198, 198);\n$color-light-grey: rgb(161, 161, 170);\n$color-grey: rgb(113, 113, 122);\n$color-dark-grey: rgb(65, 65, 68);\n$font-roboto: 'Roboto', Arial, sans-serif;\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -482,9 +482,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.aside {
   align-items: center;
   gap: 14px;
 }
-.aside_activeNav {
+.aside__navItem_activeNav {
   background-color: rgb(161, 161, 170);
-}`, "",{"version":3,"sources":["webpack://./src/components/Sidebar/Sidebar.style.scss","webpack://./src/assets/_variables.scss"],"names":[],"mappings":"AACA;EACC,iBAAA;EACA,gBAAA;EACA,aAAA;EACA,uCAAA;EACA,iCCLuB;ADKxB;AAEC;EACC,+BAAA;EACA,aAAA;EACA,+BAAA;EACA,mDACC;EAED,wCAAA;AAFF;AAIC;EACC,gBAAA;AAFF;AAKC;EACC,iBAAA;EACA,eAAA;EACA,iBAAA;AAHF;AAMC;EACC,iBAAA;EACA,UAAA;EACA,YAAA;EACA,6BAAA;AAJF;AAKE;EACC,yBAAA;AAHH;AAOC;EACC,kBAAA;EACA,qBAAA;EACA,cAAA;EACA,YAAA;EACA,aAAA;EACA,mBAAA;EACA,SAAA;AALF;AAOC;EACC,oCC1CiB;ADqCnB","sourcesContent":["@import '../../assets/variables';\n.aside {\n\tpadding-top: 43px;\n\tmin-width: 234px;\n\theight: 100vh;\n\tborder-right: 1px solid rgb(65, 65, 68);\n\tbackground-color: $color-grey-background;\n\n\t&__titleBlock {\n\t\tpadding: 8.5px 7.5px 7.5px 20px;\n\t\tdisplay: grid;\n\t\tgrid-template-columns: 1fr 24px;\n\t\tgrid-template-areas:\n\t\t\t'title button'\n\t\t\t'abbrev button';\n\t\tborder-bottom: 1px solid rgb(65, 65, 68);\n\t}\n\t&__title {\n\t\tgrid-area: title;\n\t}\n\n\t&__abbrev {\n\t\tgrid-area: abbrev;\n\t\tfont-size: 10px;\n\t\tline-height: 12px;\n\t}\n\n\t&__button {\n\t\tgrid-area: button;\n\t\tpadding: 0;\n\t\tborder: none;\n\t\tbackground-color: transparent;\n\t\t&_rotate {\n\t\t\ttransform: rotate(180deg);\n\t\t}\n\t}\n\n\t&__navItem {\n\t\tpadding-left: 20px;\n\t\ttext-decoration: none;\n\t\tcolor: inherit;\n\t\theight: 32px;\n\t\tdisplay: flex;\n\t\talign-items: center;\n\t\tgap: 14px;\n\t}\n\t&_activeNav {\n\t\tbackground-color: $color-light-grey;\n\t}\n}\n","$color-dark-background: rgb(32, 33, 36);\n$color-grey-background: rgb(39, 39, 42);\n$color-white: rgb(255, 255, 255);\n\n$color-min-grey: rgb(198, 198, 198);\n$color-light-grey: rgb(161, 161, 170);\n$color-grey: rgb(113, 113, 122);\n$color-dark-grey: rgb(65, 65, 68);\n$font-roboto: 'Roboto', Arial, sans-serif;\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/Sidebar/Sidebar.style.scss","webpack://./src/assets/_variables.scss"],"names":[],"mappings":"AACA;EACE,iBAAA;EACA,gBAAA;EACA,aAAA;EACA,uCAAA;EACA,iCCLsB;ADKxB;AAEE;EACE,+BAAA;EACA,aAAA;EACA,+BAAA;EACA,mDACE;EAEF,wCAAA;AAFJ;AAIE;EACE,gBAAA;AAFJ;AAKE;EACE,iBAAA;EACA,eAAA;EACA,iBAAA;AAHJ;AAME;EACE,iBAAA;EACA,UAAA;EACA,YAAA;EACA,6BAAA;AAJJ;AAKI;EACE,yBAAA;AAHN;AAOE;EACE,kBAAA;EACA,qBAAA;EACA,cAAA;EACA,YAAA;EACA,aAAA;EACA,mBAAA;EACA,SAAA;AALJ;AAOI;EACE,oCC1Ca;ADqCnB","sourcesContent":["@import '../../assets/variables';\n.aside {\n  padding-top: 43px;\n  min-width: 234px;\n  height: 100vh;\n  border-right: 1px solid rgb(65, 65, 68);\n  background-color: $color-grey-background;\n\n  &__titleBlock {\n    padding: 8.5px 7.5px 7.5px 20px;\n    display: grid;\n    grid-template-columns: 1fr 24px;\n    grid-template-areas:\n      'title button'\n      'abbrev button';\n    border-bottom: 1px solid rgb(65, 65, 68);\n  }\n  &__title {\n    grid-area: title;\n  }\n\n  &__abbrev {\n    grid-area: abbrev;\n    font-size: 10px;\n    line-height: 12px;\n  }\n\n  &__button {\n    grid-area: button;\n    padding: 0;\n    border: none;\n    background-color: transparent;\n    &_rotate {\n      transform: rotate(180deg);\n    }\n  }\n\n  &__navItem {\n    padding-left: 20px;\n    text-decoration: none;\n    color: inherit;\n    height: 32px;\n    display: flex;\n    align-items: center;\n    gap: 14px;\n\n    &_activeNav {\n      background-color: $color-light-grey;\n    }\n  }\n}\n","$color-dark-background: rgb(32, 33, 36);\n$color-grey-background: rgb(39, 39, 42);\n$color-white: rgb(255, 255, 255);\n\n$color-min-grey: rgb(198, 198, 198);\n$color-light-grey: rgb(161, 161, 170);\n$color-grey: rgb(113, 113, 122);\n$color-dark-grey: rgb(65, 65, 68);\n$font-roboto: 'Roboto', Arial, sans-serif;\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -590,13 +590,13 @@ audio,
 video,
 details,
 summary {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font-weight: normal;
-	vertical-align: baseline;
-	background: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 article,
@@ -608,19 +608,19 @@ nav,
 section,
 details,
 summary {
-	display: block;
+  display: block;
 }
 
 /* Handle box-sizing while better addressing child elements:
    https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
@@ -630,7 +630,7 @@ html {
 img,
 object,
 embed {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 /*
@@ -645,130 +645,130 @@ embed {
 
 /* force a vertical scrollbar to prevent a jumpy page */
 html {
-	overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 /* we use a lot of ULs that aren't bulleted.
 	don't forget to restore the bullets within content. */
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-	quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 
 a {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 del {
-	text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 abbr[title],
 dfn[title] {
-	border-bottom: 1px dotted #000;
-	cursor: help;
+  border-bottom: 1px dotted #000;
+  cursor: help;
 }
 
 /* tables still need cellspacing="0" in the markup */
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 th {
-	font-weight: bold;
-	vertical-align: bottom;
+  font-weight: bold;
+  vertical-align: bottom;
 }
 td {
-	font-weight: normal;
-	vertical-align: top;
+  font-weight: normal;
+  vertical-align: top;
 }
 
 hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid #ccc;
-	margin: 1em 0;
-	padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 input,
 select {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 pre {
-	white-space: pre; /* CSS2 */
-	white-space: pre-wrap; /* CSS 2.1 */
-	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
-	word-wrap: break-word; /* IE */
+  white-space: pre; /* CSS2 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word; /* IE */
 }
 
 input[type='radio'] {
-	vertical-align: text-bottom;
+  vertical-align: text-bottom;
 }
 input[type='checkbox'] {
-	vertical-align: bottom;
+  vertical-align: bottom;
 }
 .ie7 input[type='checkbox'] {
-	vertical-align: baseline;
+  vertical-align: baseline;
 }
 .ie6 input {
-	vertical-align: text-bottom;
+  vertical-align: text-bottom;
 }
 
 select,
 input,
 textarea {
-	font: 99% sans-serif;
+  font: 99% sans-serif;
 }
 
 table {
-	font-size: inherit;
-	font: 100%;
+  font-size: inherit;
+  font: 100%;
 }
 
 small {
-	font-size: 85%;
+  font-size: 85%;
 }
 
 strong {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 td,
 td img {
-	vertical-align: top;
+  vertical-align: top;
 }
 
 /* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */
 sub,
 sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
 }
 sup {
-	top: -0.5em;
+  top: -0.5em;
 }
 sub {
-	bottom: -0.25em;
+  bottom: -0.25em;
 }
 
 /* standardize any monospaced elements */
@@ -776,7 +776,7 @@ pre,
 code,
 kbd,
 samp {
-	font-family: monospace, sans-serif;
+  font-family: monospace, sans-serif;
 }
 
 /* hand cursor on clickable elements */
@@ -786,7 +786,7 @@ input[type='button'],
 input[type='submit'],
 input[type='file'],
 button {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 /* Webkit browsers add a 2px margin outside the chrome of form elements */
@@ -794,19 +794,19 @@ button,
 input,
 select,
 textarea {
-	margin: 0;
+  margin: 0;
 }
 
 /* make buttons play nice in IE */
 button,
 input[type='button'] {
-	width: auto;
-	overflow: visible;
+  width: auto;
+  overflow: visible;
 }
 
 /* scale images in IE7 more attractively */
 .ie7 img {
-	-ms-interpolation-mode: bicubic;
+  -ms-interpolation-mode: bicubic;
 }
 
 /* prevent BG image flicker upon hover
@@ -817,18 +817,18 @@ input[type='button'] {
 /* let's clear some floats */
 .clearfix:before,
 .clearfix:after {
-	content: '\\0020';
-	display: block;
-	height: 0;
-	overflow: hidden;
+  content: '\\0020';
+  display: block;
+  height: 0;
+  overflow: hidden;
 }
 .clearfix:after {
-	clear: both;
+  clear: both;
 }
 .clearfix {
-	zoom: 1;
+  zoom: 1;
 }
-`, "",{"version":3,"sources":["webpack://./src/assets/reset.css"],"names":[],"mappings":"AAAA;;;;;;;;;gFASgF;;AAEhF;gFACgF;;AAEhF;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CAkEC,SAAS;CACT,UAAU;CACV,SAAS;CACT,eAAe;CACf,mBAAmB;CACnB,wBAAwB;CACxB,uBAAuB;AACxB;;AAEA;;;;;;;;;CASC,cAAc;AACf;;AAEA;yFACyF;AACzF;CACC,sBAAsB;AACvB;;AAEA;;;CAGC,mBAAmB;AACpB;;AAEA,oFAAoF;;AAEpF;CACC;AACD;;;CAGC,eAAe;AAChB;;AAEA;;;;;;;;CAQC;;AAED,uDAAuD;AACvD;CACC,kBAAkB;AACnB;;AAEA;sDACsD;AACtD;CACC,gBAAgB;AACjB;;AAEA;;CAEC,YAAY;AACb;;AAEA;;;;CAIC,WAAW;CACX,aAAa;AACd;;AAEA;CACC,SAAS;CACT,UAAU;CACV,eAAe;CACf,wBAAwB;CACxB,uBAAuB;AACxB;;AAEA;CACC,6BAA6B;AAC9B;;AAEA;;CAEC,8BAA8B;CAC9B,YAAY;AACb;;AAEA,oDAAoD;AACpD;CACC,yBAAyB;CACzB,iBAAiB;AAClB;AACA;CACC,iBAAiB;CACjB,sBAAsB;AACvB;AACA;CACC,mBAAmB;CACnB,mBAAmB;AACpB;;AAEA;CACC,cAAc;CACd,WAAW;CACX,SAAS;CACT,0BAA0B;CAC1B,aAAa;CACb,UAAU;AACX;;AAEA;;CAEC,sBAAsB;AACvB;;AAEA;CACC,gBAAgB,EAAE,SAAS;CAC3B,qBAAqB,EAAE,YAAY;CACnC,qBAAqB,EAAE,sCAAsC;CAC7D,qBAAqB,EAAE,OAAO;AAC/B;;AAEA;CACC,2BAA2B;AAC5B;AACA;CACC,sBAAsB;AACvB;AACA;CACC,wBAAwB;AACzB;AACA;CACC,2BAA2B;AAC5B;;AAEA;;;CAGC,oBAAoB;AACrB;;AAEA;CACC,kBAAkB;CAClB,UAAU;AACX;;AAEA;CACC,cAAc;AACf;;AAEA;CACC,iBAAiB;AAClB;;AAEA;;CAEC,mBAAmB;AACpB;;AAEA,2FAA2F;AAC3F;;CAEC,cAAc;CACd,cAAc;CACd,kBAAkB;AACnB;AACA;CACC,WAAW;AACZ;AACA;CACC,eAAe;AAChB;;AAEA,wCAAwC;AACxC;;;;CAIC,kCAAkC;AACnC;;AAEA,sCAAsC;AACtC;;;;;;CAMC,eAAe;AAChB;;AAEA,yEAAyE;AACzE;;;;CAIC,SAAS;AACV;;AAEA,iCAAiC;AACjC;;CAEC,WAAW;CACX,iBAAiB;AAClB;;AAEA,0CAA0C;AAC1C;CACC,+BAA+B;AAChC;;AAEA;;;CAGC;;AAED,4BAA4B;AAC5B;;CAEC,gBAAgB;CAChB,cAAc;CACd,SAAS;CACT,gBAAgB;AACjB;AACA;CACC,WAAW;AACZ;AACA;CACC,OAAO;AACR","sourcesContent":["/*\n\tHTML5 Reset :: style.css\n\t----------------------------------------------------------\n\tWe have learned much from/been inspired by/taken code where offered from:\n\n\tEric Meyer\t\t\t\t\t:: https://meyerweb.com\n\tHTML5 Doctor\t\t\t\t:: https://html5doctor.com\n\tand the HTML5 Boilerplate\t:: https://html5boilerplate.com\n\n-------------------------------------------------------------------------------*/\n\n/* Let's default this puppy out\n-------------------------------------------------------------------------------*/\n\nhtml,\nbody,\nbody div,\nspan,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\nabbr,\naddress,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\nsamp,\nsmall,\nstrong,\nsub,\nsup,\nvar,\nb,\ni,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\nfigure,\nfooter,\nheader,\nmenu,\nnav,\nsection,\ntime,\nmark,\naudio,\nvideo,\ndetails,\nsummary {\n\tmargin: 0;\n\tpadding: 0;\n\tborder: 0;\n\tfont-size: 100%;\n\tfont-weight: normal;\n\tvertical-align: baseline;\n\tbackground: transparent;\n}\n\narticle,\naside,\nfigure,\nfooter,\nheader,\nnav,\nsection,\ndetails,\nsummary {\n\tdisplay: block;\n}\n\n/* Handle box-sizing while better addressing child elements:\n   https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */\nhtml {\n\tbox-sizing: border-box;\n}\n\n*,\n*:before,\n*:after {\n\tbox-sizing: inherit;\n}\n\n/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */\n\n/* Responsive images and other embedded objects\n*/\nimg,\nobject,\nembed {\n\tmax-width: 100%;\n}\n\n/*\n   Note: keeping IMG here will cause problems if you're using foreground images as sprites.\n\t In fact, it *will* cause problems with Google Maps' controls at small size.\n\tIf this is the case for you, try uncommenting the following:\n\n#map img {\n\t\tmax-width: none;\n}\n*/\n\n/* force a vertical scrollbar to prevent a jumpy page */\nhtml {\n\toverflow-y: scroll;\n}\n\n/* we use a lot of ULs that aren't bulleted.\n\tdon't forget to restore the bullets within content. */\nul {\n\tlist-style: none;\n}\n\nblockquote,\nq {\n\tquotes: none;\n}\n\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n\tcontent: '';\n\tcontent: none;\n}\n\na {\n\tmargin: 0;\n\tpadding: 0;\n\tfont-size: 100%;\n\tvertical-align: baseline;\n\tbackground: transparent;\n}\n\ndel {\n\ttext-decoration: line-through;\n}\n\nabbr[title],\ndfn[title] {\n\tborder-bottom: 1px dotted #000;\n\tcursor: help;\n}\n\n/* tables still need cellspacing=\"0\" in the markup */\ntable {\n\tborder-collapse: collapse;\n\tborder-spacing: 0;\n}\nth {\n\tfont-weight: bold;\n\tvertical-align: bottom;\n}\ntd {\n\tfont-weight: normal;\n\tvertical-align: top;\n}\n\nhr {\n\tdisplay: block;\n\theight: 1px;\n\tborder: 0;\n\tborder-top: 1px solid #ccc;\n\tmargin: 1em 0;\n\tpadding: 0;\n}\n\ninput,\nselect {\n\tvertical-align: middle;\n}\n\npre {\n\twhite-space: pre; /* CSS2 */\n\twhite-space: pre-wrap; /* CSS 2.1 */\n\twhite-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */\n\tword-wrap: break-word; /* IE */\n}\n\ninput[type='radio'] {\n\tvertical-align: text-bottom;\n}\ninput[type='checkbox'] {\n\tvertical-align: bottom;\n}\n.ie7 input[type='checkbox'] {\n\tvertical-align: baseline;\n}\n.ie6 input {\n\tvertical-align: text-bottom;\n}\n\nselect,\ninput,\ntextarea {\n\tfont: 99% sans-serif;\n}\n\ntable {\n\tfont-size: inherit;\n\tfont: 100%;\n}\n\nsmall {\n\tfont-size: 85%;\n}\n\nstrong {\n\tfont-weight: bold;\n}\n\ntd,\ntd img {\n\tvertical-align: top;\n}\n\n/* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */\nsub,\nsup {\n\tfont-size: 75%;\n\tline-height: 0;\n\tposition: relative;\n}\nsup {\n\ttop: -0.5em;\n}\nsub {\n\tbottom: -0.25em;\n}\n\n/* standardize any monospaced elements */\npre,\ncode,\nkbd,\nsamp {\n\tfont-family: monospace, sans-serif;\n}\n\n/* hand cursor on clickable elements */\n.clickable,\nlabel,\ninput[type='button'],\ninput[type='submit'],\ninput[type='file'],\nbutton {\n\tcursor: pointer;\n}\n\n/* Webkit browsers add a 2px margin outside the chrome of form elements */\nbutton,\ninput,\nselect,\ntextarea {\n\tmargin: 0;\n}\n\n/* make buttons play nice in IE */\nbutton,\ninput[type='button'] {\n\twidth: auto;\n\toverflow: visible;\n}\n\n/* scale images in IE7 more attractively */\n.ie7 img {\n\t-ms-interpolation-mode: bicubic;\n}\n\n/* prevent BG image flicker upon hover\n   (commented out as usage is rare, and the filter syntax messes with some pre-processors)\n.ie6 html {filter: expression(document.execCommand(\"BackgroundImageCache\", false, true));}\n*/\n\n/* let's clear some floats */\n.clearfix:before,\n.clearfix:after {\n\tcontent: '\\0020';\n\tdisplay: block;\n\theight: 0;\n\toverflow: hidden;\n}\n.clearfix:after {\n\tclear: both;\n}\n.clearfix {\n\tzoom: 1;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/assets/reset.css"],"names":[],"mappings":"AAAA;;;;;;;;;gFASgF;;AAEhF;gFACgF;;AAEhF;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAkEE,SAAS;EACT,UAAU;EACV,SAAS;EACT,eAAe;EACf,mBAAmB;EACnB,wBAAwB;EACxB,uBAAuB;AACzB;;AAEA;;;;;;;;;EASE,cAAc;AAChB;;AAEA;yFACyF;AACzF;EACE,sBAAsB;AACxB;;AAEA;;;EAGE,mBAAmB;AACrB;;AAEA,oFAAoF;;AAEpF;CACC;AACD;;;EAGE,eAAe;AACjB;;AAEA;;;;;;;;CAQC;;AAED,uDAAuD;AACvD;EACE,kBAAkB;AACpB;;AAEA;sDACsD;AACtD;EACE,gBAAgB;AAClB;;AAEA;;EAEE,YAAY;AACd;;AAEA;;;;EAIE,WAAW;EACX,aAAa;AACf;;AAEA;EACE,SAAS;EACT,UAAU;EACV,eAAe;EACf,wBAAwB;EACxB,uBAAuB;AACzB;;AAEA;EACE,6BAA6B;AAC/B;;AAEA;;EAEE,8BAA8B;EAC9B,YAAY;AACd;;AAEA,oDAAoD;AACpD;EACE,yBAAyB;EACzB,iBAAiB;AACnB;AACA;EACE,iBAAiB;EACjB,sBAAsB;AACxB;AACA;EACE,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,cAAc;EACd,WAAW;EACX,SAAS;EACT,0BAA0B;EAC1B,aAAa;EACb,UAAU;AACZ;;AAEA;;EAEE,sBAAsB;AACxB;;AAEA;EACE,gBAAgB,EAAE,SAAS;EAC3B,qBAAqB,EAAE,YAAY;EACnC,qBAAqB,EAAE,sCAAsC;EAC7D,qBAAqB,EAAE,OAAO;AAChC;;AAEA;EACE,2BAA2B;AAC7B;AACA;EACE,sBAAsB;AACxB;AACA;EACE,wBAAwB;AAC1B;AACA;EACE,2BAA2B;AAC7B;;AAEA;;;EAGE,oBAAoB;AACtB;;AAEA;EACE,kBAAkB;EAClB,UAAU;AACZ;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;;EAEE,mBAAmB;AACrB;;AAEA,2FAA2F;AAC3F;;EAEE,cAAc;EACd,cAAc;EACd,kBAAkB;AACpB;AACA;EACE,WAAW;AACb;AACA;EACE,eAAe;AACjB;;AAEA,wCAAwC;AACxC;;;;EAIE,kCAAkC;AACpC;;AAEA,sCAAsC;AACtC;;;;;;EAME,eAAe;AACjB;;AAEA,yEAAyE;AACzE;;;;EAIE,SAAS;AACX;;AAEA,iCAAiC;AACjC;;EAEE,WAAW;EACX,iBAAiB;AACnB;;AAEA,0CAA0C;AAC1C;EACE,+BAA+B;AACjC;;AAEA;;;CAGC;;AAED,4BAA4B;AAC5B;;EAEE,gBAAgB;EAChB,cAAc;EACd,SAAS;EACT,gBAAgB;AAClB;AACA;EACE,WAAW;AACb;AACA;EACE,OAAO;AACT","sourcesContent":["/*\n\tHTML5 Reset :: style.css\n\t----------------------------------------------------------\n\tWe have learned much from/been inspired by/taken code where offered from:\n\n\tEric Meyer\t\t\t\t\t:: https://meyerweb.com\n\tHTML5 Doctor\t\t\t\t:: https://html5doctor.com\n\tand the HTML5 Boilerplate\t:: https://html5boilerplate.com\n\n-------------------------------------------------------------------------------*/\n\n/* Let's default this puppy out\n-------------------------------------------------------------------------------*/\n\nhtml,\nbody,\nbody div,\nspan,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\nabbr,\naddress,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\nsamp,\nsmall,\nstrong,\nsub,\nsup,\nvar,\nb,\ni,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\nfigure,\nfooter,\nheader,\nmenu,\nnav,\nsection,\ntime,\nmark,\naudio,\nvideo,\ndetails,\nsummary {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font-weight: normal;\n  vertical-align: baseline;\n  background: transparent;\n}\n\narticle,\naside,\nfigure,\nfooter,\nheader,\nnav,\nsection,\ndetails,\nsummary {\n  display: block;\n}\n\n/* Handle box-sizing while better addressing child elements:\n   https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */\nhtml {\n  box-sizing: border-box;\n}\n\n*,\n*:before,\n*:after {\n  box-sizing: inherit;\n}\n\n/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */\n\n/* Responsive images and other embedded objects\n*/\nimg,\nobject,\nembed {\n  max-width: 100%;\n}\n\n/*\n   Note: keeping IMG here will cause problems if you're using foreground images as sprites.\n\t In fact, it *will* cause problems with Google Maps' controls at small size.\n\tIf this is the case for you, try uncommenting the following:\n\n#map img {\n\t\tmax-width: none;\n}\n*/\n\n/* force a vertical scrollbar to prevent a jumpy page */\nhtml {\n  overflow-y: scroll;\n}\n\n/* we use a lot of ULs that aren't bulleted.\n\tdon't forget to restore the bullets within content. */\nul {\n  list-style: none;\n}\n\nblockquote,\nq {\n  quotes: none;\n}\n\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: '';\n  content: none;\n}\n\na {\n  margin: 0;\n  padding: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\n\ndel {\n  text-decoration: line-through;\n}\n\nabbr[title],\ndfn[title] {\n  border-bottom: 1px dotted #000;\n  cursor: help;\n}\n\n/* tables still need cellspacing=\"0\" in the markup */\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\nth {\n  font-weight: bold;\n  vertical-align: bottom;\n}\ntd {\n  font-weight: normal;\n  vertical-align: top;\n}\n\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 1px solid #ccc;\n  margin: 1em 0;\n  padding: 0;\n}\n\ninput,\nselect {\n  vertical-align: middle;\n}\n\npre {\n  white-space: pre; /* CSS2 */\n  white-space: pre-wrap; /* CSS 2.1 */\n  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */\n  word-wrap: break-word; /* IE */\n}\n\ninput[type='radio'] {\n  vertical-align: text-bottom;\n}\ninput[type='checkbox'] {\n  vertical-align: bottom;\n}\n.ie7 input[type='checkbox'] {\n  vertical-align: baseline;\n}\n.ie6 input {\n  vertical-align: text-bottom;\n}\n\nselect,\ninput,\ntextarea {\n  font: 99% sans-serif;\n}\n\ntable {\n  font-size: inherit;\n  font: 100%;\n}\n\nsmall {\n  font-size: 85%;\n}\n\nstrong {\n  font-weight: bold;\n}\n\ntd,\ntd img {\n  vertical-align: top;\n}\n\n/* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n}\nsup {\n  top: -0.5em;\n}\nsub {\n  bottom: -0.25em;\n}\n\n/* standardize any monospaced elements */\npre,\ncode,\nkbd,\nsamp {\n  font-family: monospace, sans-serif;\n}\n\n/* hand cursor on clickable elements */\n.clickable,\nlabel,\ninput[type='button'],\ninput[type='submit'],\ninput[type='file'],\nbutton {\n  cursor: pointer;\n}\n\n/* Webkit browsers add a 2px margin outside the chrome of form elements */\nbutton,\ninput,\nselect,\ntextarea {\n  margin: 0;\n}\n\n/* make buttons play nice in IE */\nbutton,\ninput[type='button'] {\n  width: auto;\n  overflow: visible;\n}\n\n/* scale images in IE7 more attractively */\n.ie7 img {\n  -ms-interpolation-mode: bicubic;\n}\n\n/* prevent BG image flicker upon hover\n   (commented out as usage is rare, and the filter syntax messes with some pre-processors)\n.ie6 html {filter: expression(document.execCommand(\"BackgroundImageCache\", false, true));}\n*/\n\n/* let's clear some floats */\n.clearfix:before,\n.clearfix:after {\n  content: '\\0020';\n  display: block;\n  height: 0;\n  overflow: hidden;\n}\n.clearfix:after {\n  clear: both;\n}\n.clearfix {\n  zoom: 1;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -37595,4 +37595,4 @@ root.render((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_app_provider
 
 /******/ })()
 ;
-//# sourceMappingURL=main.8c89ec71.js.map
+//# sourceMappingURL=main.1eb4a3af.js.map
