@@ -31082,10 +31082,29 @@ function AddRowItem({ level, parentId, onTrashClick, onSubmitForm }) {
             parentId: parentId
         };
         createRow(Object.assign(Object.assign({}, newData), _utils_constants__WEBPACK_IMPORTED_MODULE_5__.additionalKeys));
-        onSubmitForm();
+        onSubmitForm && onSubmitForm();
     };
-    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("form", { className: 'addForm', onSubmit: handleSubmit(onSubmit), children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_FormButtons_FormButtons__WEBPACK_IMPORTED_MODULE_1__["default"], { level: level, childs: 0, isChild: level !== 1, onTrashClick: () => onTrashClick(false) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", Object.assign({ className: 'addForm__input' }, register('rowName'))), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_ui_inputs_InputNum__WEBPACK_IMPORTED_MODULE_3__["default"], Object.assign({ extraClassName: 'addForm__input' }, register('salary'))), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_ui_inputs_InputNum__WEBPACK_IMPORTED_MODULE_3__["default"], Object.assign({ extraClassName: 'addForm__input' }, register('equipmentCosts'))), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_ui_inputs_InputNum__WEBPACK_IMPORTED_MODULE_3__["default"], Object.assign({ extraClassName: 'addForm__input' }, register('overheads'))), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_ui_inputs_InputNum__WEBPACK_IMPORTED_MODULE_3__["default"], Object.assign({ extraClassName: 'addForm__input' }, register('estimatedProfit'))), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", { type: 'submit', className: 'addForm__submit' })] }) }));
+    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("form", { className: 'addForm', onSubmit: handleSubmit(onSubmit), children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_FormButtons_FormButtons__WEBPACK_IMPORTED_MODULE_1__["default"], { level: level, childs: 0, isChild: level !== 1, onTrashClick: () => {
+                        onTrashClick && onTrashClick(false);
+                    } }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", Object.assign({ className: 'addForm__input' }, register('rowName'))), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_ui_inputs_InputNum__WEBPACK_IMPORTED_MODULE_3__["default"], Object.assign({ extraClassName: 'addForm__input' }, register('salary'))), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_ui_inputs_InputNum__WEBPACK_IMPORTED_MODULE_3__["default"], Object.assign({ extraClassName: 'addForm__input' }, register('equipmentCosts'))), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_ui_inputs_InputNum__WEBPACK_IMPORTED_MODULE_3__["default"], Object.assign({ extraClassName: 'addForm__input' }, register('overheads'))), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_ui_inputs_InputNum__WEBPACK_IMPORTED_MODULE_3__["default"], Object.assign({ extraClassName: 'addForm__input' }, register('estimatedProfit'))), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", { type: 'submit', className: 'addForm__submit' })] }) }));
 }
+
+
+/***/ }),
+
+/***/ "./src/components/AddRowItem/index.ts":
+/*!********************************************!*\
+  !*** ./src/components/AddRowItem/index.ts ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   AddRowItem: () => (/* reexport safe */ _AddRowItem__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _AddRowItem__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AddRowItem */ "./src/components/AddRowItem/AddRowItem.tsx");
+
+
 
 
 /***/ }),
@@ -31104,13 +31123,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_hooks_useRows__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/hooks/useRows */ "./src/hooks/useRows.ts");
 /* harmony import */ var _FormItem_FormItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../FormItem/FormItem */ "./src/components/FormItem/FormItem.tsx");
 /* harmony import */ var _BuildWork_style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./BuildWork.style.scss */ "./src/components/BuildWork/BuildWork.style.scss");
+/* harmony import */ var _AddRowItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../AddRowItem */ "./src/components/AddRowItem/index.ts");
+
 
 
 
 
 function BuildWork() {
     const { rows, setRows } = (0,src_hooks_useRows__WEBPACK_IMPORTED_MODULE_1__.useRows)();
-    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", { className: 'build', children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: 'build__tabs', children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h2", { className: 'build__title', children: "\u0421\u0442\u0440\u043E\u0438\u0442\u0435\u043B\u044C\u043D\u043E-\u043C\u043E\u043D\u0442\u0430\u0436\u043D\u044B\u0435 \u0440\u0430\u0431\u043E\u0442\u044B" }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: 'build__names', children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: 'build__name', children: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: 'build__name', children: "\u041D\u0430\u0438\u043C\u0435\u043D\u043E\u0432\u0430\u043D\u0438\u0435 \u0440\u0430\u0431\u043E\u0442" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: 'build__name', children: "\u041E\u0441\u043D\u043E\u0432\u043D\u0430\u044F \u0437/\u043F" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: 'build__name', children: "\u041E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u0435" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: 'build__name', children: "\u041D\u0430\u043A\u043B\u0430\u0434\u043D\u044B\u0435 \u0440\u0430\u0441\u0445\u043E\u0434\u044B" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: 'build__name', children: "\u0421\u043C\u0435\u0442\u043D\u0430\u044F \u043F\u0440\u0438\u0431\u044B\u043B\u044C" })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("ul", { className: 'build__list', children: rows === null || rows === void 0 ? void 0 : rows.map((item, i) => ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_FormItem_FormItem__WEBPACK_IMPORTED_MODULE_2__["default"], Object.assign({}, item, { level: 1, siblingsBelow: rows.length - 1 - i })) }, item.id))) })] }));
+    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", { className: 'build', children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: 'build__tabs', children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h2", { className: 'build__title', children: "\u0421\u0442\u0440\u043E\u0438\u0442\u0435\u043B\u044C\u043D\u043E-\u043C\u043E\u043D\u0442\u0430\u0436\u043D\u044B\u0435 \u0440\u0430\u0431\u043E\u0442\u044B" }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: 'build__names', children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: 'build__name', children: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: 'build__name', children: "\u041D\u0430\u0438\u043C\u0435\u043D\u043E\u0432\u0430\u043D\u0438\u0435 \u0440\u0430\u0431\u043E\u0442" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: 'build__name', children: "\u041E\u0441\u043D\u043E\u0432\u043D\u0430\u044F \u0437/\u043F" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: 'build__name', children: "\u041E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u0435" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: 'build__name', children: "\u041D\u0430\u043A\u043B\u0430\u0434\u043D\u044B\u0435 \u0440\u0430\u0441\u0445\u043E\u0434\u044B" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: 'build__name', children: "\u0421\u043C\u0435\u0442\u043D\u0430\u044F \u043F\u0440\u0438\u0431\u044B\u043B\u044C" })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("ul", { className: 'build__list', children: (rows === null || rows === void 0 ? void 0 : rows.length) ? (rows.map((item, i) => ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_FormItem_FormItem__WEBPACK_IMPORTED_MODULE_2__["default"], Object.assign({}, item, { level: 1, siblingsBelow: rows.length - 1 - i })) }, item.id)))) : ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_AddRowItem__WEBPACK_IMPORTED_MODULE_4__.AddRowItem, { level: 1, parentId: null })) })] }));
 }
 
 
@@ -37574,4 +37595,4 @@ root.render((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_app_provider
 
 /******/ })()
 ;
-//# sourceMappingURL=main.32536987.js.map
+//# sourceMappingURL=main.e9e6b1d6.js.map
