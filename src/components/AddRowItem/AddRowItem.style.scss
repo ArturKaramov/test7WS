@@ -1,0 +1,33 @@
+@import '../../assets/variables';
+
+.addForm {
+	height: 60px;
+	padding: 12px 0;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 110px minmax(200px, 1fr) repeat(4, 200px);
+	border-top: 1px solid $color-dark-grey;
+
+	&__input {
+		margin: 0 12px;
+		padding-left: 10px;
+		height: 100%;
+		background-color: transparent;
+
+		color: $color-grey;
+		outline: none;
+		border: 1px solid $color-dark-grey;
+		border-radius: 6px;
+
+		&:focus {
+			color: $color-grey;
+			outline: none;
+			border: 1px solid $color-dark-grey;
+			border-radius: 6px;
+		}
+	}
+
+	&__submit {
+		display: none;
+	}
+}

@@ -1,0 +1,30 @@
+@import '../../assets/variables';
+.build {
+	width: 100%;
+	margin-top: 43px;
+	max-width: calc(1920px - 234px);
+	&__tabs {
+		border-bottom: 1px solid $color-dark-grey;
+	}
+	&__title {
+		display: inline-block;
+		font-size: 18px;
+		line-height: 21px;
+		padding: 11.5px 15.5px 11.5px 14.5px;
+		border-right: 1px solid $color-dark-grey;
+	}
+	&__names {
+		display: grid;
+		grid-template-columns: 110px minmax(200px, 1fr) repeat(4, 200px);
+		margin-left: 9.5px;
+		padding: 12px 0;
+	}
+
+	&__name {
+		padding: 0 12px;
+	}
+
+	&__list {
+		margin-left: 9px;
+	}
+}

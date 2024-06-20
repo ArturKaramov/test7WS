@@ -1,0 +1,50 @@
+@import '../../assets/variables';
+.aside {
+	padding-top: 43px;
+	min-width: 234px;
+	height: 100vh;
+	border-right: 1px solid rgb(65, 65, 68);
+	background-color: $color-grey-background;
+
+	&__titleBlock {
+		padding: 8.5px 7.5px 7.5px 20px;
+		display: grid;
+		grid-template-columns: 1fr 24px;
+		grid-template-areas:
+			'title button'
+			'abbrev button';
+		border-bottom: 1px solid rgb(65, 65, 68);
+	}
+	&__title {
+		grid-area: title;
+	}
+
+	&__abbrev {
+		grid-area: abbrev;
+		font-size: 10px;
+		line-height: 12px;
+	}
+
+	&__button {
+		grid-area: button;
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		&_rotate {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__navItem {
+		padding-left: 20px;
+		text-decoration: none;
+		color: inherit;
+		height: 32px;
+		display: flex;
+		align-items: center;
+		gap: 14px;
+	}
+	&_activeNav {
+		background-color: $color-light-grey;
+	}
+}

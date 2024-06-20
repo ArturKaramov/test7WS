@@ -1,0 +1,41 @@
+@import '../../assets/variables';
+.header {
+	width: 100%;
+	max-width: 1920px;
+	height: 43px;
+	position: fixed;
+	background-color: $color-grey-background;
+	top: 0;
+	left: 0;
+	border: 1px solid rgb(65, 65, 68);
+
+	&__nav {
+		height: 100%;
+	}
+	&__list {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		padding-left: 20px;
+		gap: 28px;
+		color: $color-light-grey;
+	}
+	&__icons {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	&__sections {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		gap: 24px;
+
+		&_active {
+			padding: 13px 4px 12px 3px;
+			border-bottom: 2px solid $color-white;
+			color: $color-white;
+		}
+	}
+}
